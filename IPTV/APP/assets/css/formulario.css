@@ -1,0 +1,64 @@
+.input {
+    width: 80%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: #46297B;
+    border: 1px solid #46297B;
+    border-radius: 5px;
+}
+
+.input:hover {
+    font-weight: bold;
+    border: 2px solid #46297B;
+}
+
+button {
+    width: 35%;
+    height: 40px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button_gravar {
+    color: #ececec;
+    background-color: #46297B;
+    border-radius: 5px;
+}
+
+.button_lista {
+    color: #46297B;
+    background-color: #ececec;
+    border-radius: 5px;
+    border: 1px solid #46297B;
+    margin-left: 10%;
+}
+
+.input-with-image {
+    display: flex;
+    align-items: center;
+}
+
+.input-with-image input[type="text"] {
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    color: #46297B;
+    border: 1px solid #b6b3bd;
+    border-radius: 5px;
+    /* Ajuste conforme necessário para dar espaço entre o input e a imagem */
+}
+
+.input-with-image img {
+    width: 70px;
+    height: 70px;
+}
