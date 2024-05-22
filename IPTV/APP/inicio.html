@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="stylesheet" href="assets/css/inicio.css">
-    <link rel="stylesheet" href="assets/css/formulario.css">
     <title>APP IPTV</title>
 </head>
 
@@ -14,17 +13,19 @@
 
     <div class="container_inicio">
         <div class="topo_area">
-            <div class="input-with-image">
-                <img src="assets/image/mic.png" width="60px" alt="Microfone de Busca">
-                <input type="text" placeholder="Busca...">
+            <div class="topo_area_busca">
+                <img src="assets/image/mic.png" width="60px" alt="Microfone de Busca" style="vertical-align: middle;">
+                <input type="text" class="form_busca_inicio" placeholder="Busca..." style="vertical-align: middle;">
             </div>
-            <div><img src="assets/image/logo_roxo.png" alt="Logo Roxo" class="logotelainicio" />
+            <div class="topo_area_logo">
+                <img src="assets/image/logo_roxo.png" alt="Logo Roxo" class="logo_tela_inicio" />
             </div>
-            <div>
+            <div class="topo_area_config">
                 <img src="assets/image/settings.png" width="60px" alt="Configurações">
                 <img src="assets/image/user.png" width="60px" alt="Perfil">
             </div>
         </div>
+
         <div class="aovivo_area efeito-vidro">
             <img src="assets/image/desktop.png">
             <br>
@@ -41,9 +42,8 @@
             <br>SÉRIES
         </div>
         <div class="data_area">
-            <span style="font-size: 72px;">12:00</span>
-
-            <span style="font-size: 24px;"> Sexta-feira, 12 Jan </span>
+            <a class="hora">12:00 </a>
+            <a class="data"> Sexta-feira, 12 Jan </a>
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 * {
     margin: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -12,6 +12,8 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 .efeito-vidro {
@@ -23,52 +25,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.logoinicio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 40%;
-}
-
-.logotelainicio {
-    width: 20%;
-}
-
-.logologin {
-    width: 50%;
-}
-
-/* PAGINA DO LOGIN  */
-.container {
+.conteiner_index {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-items: center;
-    align-items: center;
 }
 
-.login_area {
-    display: flex;
-    width: 450px;
-    height: 350px;
-    align-items: center;
-}
-
-.login_area2 {
-    width: 85%;
-    align-items: center;
-    padding-left: 50px;
-}
-
-.logo_area {
-    width: 50%;
-
-}
-
-.img_logo_login {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
+.logo_index {
+    width: 350px;
 }

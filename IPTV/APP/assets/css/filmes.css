@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    background-color: #46297B;
+}
+
+.topo_area {
+    display: flex;
+    width: 100%;
+    height: 90px;
+}
+
+.topo_area_logo {
+    width: 30%;
+    margin-left: 50px;
+}
+
+.topo_button {
+    width: 70%;
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container_filmes {
+    display: flex;
+    width: 98vw;
+}
+
+.esq_area {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 20%;
+}
+
+.dir_area {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.button_filmes {
+    width: 200px;
+    height: 60px;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #F5BD20;
+    color: #46297B;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.button_tv,
+.button_series {
+    width: 200px;
+    height: 60px;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #8636A9;
+    color: #f6f6f6;
+    font-size: 24px;
+}
+
+.input_canais {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 20px;
+    color: #46297B;
+    display: flex;
+    align-items: center;
+}
+
+.form_busca_inicio {
+    width: 80%;
+    height: 40px;
+    margin-left: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.button_canais {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 20px;
+    color: #46297B;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.button_canais:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.container_card {
+    width: 185px;
+    height: 265px;
+    background-color: #8636A9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+}
+
+.card_filme,
+.item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card_filme {
+    width: 185px;
+    height: 265px;
+    background-color: #8636A9;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.item {
+    width: 185px;
+    height: 45px;
+    background-color: #F5BD20;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    top: 0;
+    text-align: center;
+    color: #46297B;
+    font-size: 18px;
+    font-weight: bolder;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.card_filme:hover .item {
+    display: none;
+    z-index: 2;
+}

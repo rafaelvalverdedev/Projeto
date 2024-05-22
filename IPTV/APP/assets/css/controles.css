@@ -1,0 +1,92 @@
+* {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    background-color: #e3f0ff;
+    background: url(../image/fundo-controles.png) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.container_tela {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.elemento {
+    width: 100%;
+    height: 140px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background: rgba(70, 41, 213, 0.5);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    display: flex;
+}
+
+.logo_baixo {
+    width: 15%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.controles {
+    width: 100%;
+    height: 90%;
+
+    justify-items: left;
+    align-items: flex-start;
+}
+
+
+.nome_canal {
+    color: #f6f6f6;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.programacao_atual {
+    color: #f6f6f6;
+    font-size: 12px;
+}
+
+.progresso_container {
+    width: 100%;
+    height: 5px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    ;
+}
+
+.progresso_barra {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #F5BD20;
+}
+
+.botoes_controles {
+    width: 10%;
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 500px;
+    top: 15px;
+}

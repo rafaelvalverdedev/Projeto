@@ -1,0 +1,33 @@
+/* PAGINA DO LOGIN  */
+.container_login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.login_area {
+    display: flex;
+    width: 500px;
+    height: 430px;
+    align-items: center;
+}
+
+.logo_area {
+    width: 500px;
+}
+
+.login_area2 {
+    width: 425px;
+    align-items: center;
+    padding-left: 50px;
+}
+
+
+.img_logo_login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
