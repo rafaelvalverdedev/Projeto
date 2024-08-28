@@ -1,7 +1,5 @@
 # Projetos para Aperfeiçoar Estudos em Front-End
 
-# Projetos para Aprimorar seus Conhecimentos em Front-End
-
 Aqui estão algumas ideias de projetos que aperfeiçoaram meus estudos em desenvolvimento front-end:
 
 ## 1. Portfolio Pessoal
