@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+    <title>Rafael Valverde - Dev</title>
+</head>
+
+<body>
+    <img src="astronaut2.png" class="fallback-image" alt="Fallback Image">
+
+
+    <img src="astronaut2.png" id="movableImage" alt="Fallback Image">
+    
+    <video class="video-background" autoplay muted loop playsinline>
+        <source src="video/9340918-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <div class="content">
+        <h1>Bem-vindo à minha página</h1>
+        <p>Rafael Valverde</p>
+    </div>
+    <script>
+        const image = document.getElementById('movableImage');
+
+        document.addEventListener('mousemove', function (e) {
+            const x = e.clientX / window.innerWidth * 3;
+            const y = e.clientY / window.innerHeight * 3;
+            image.style.transform = `translate(${x}%, ${y}%)`;
+        });
+    </script>
+</body>
+
+</html>
