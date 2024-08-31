@@ -1,7 +1,6 @@
 body,
 html {
     margin: 0;
-    height: 100vh;
     background: rgb(32, 44, 57);
     overflow: hidden;
     display: flex;
@@ -48,19 +47,16 @@ html {
 }
 
 @keyframes anima-estrela {
-
     0%,
     100% {
         opacity: 0.5;
     }
-
     50% {
         opacity: 1;
     }
 }
 
 @keyframes animafundo {
-
     0%,
     100% {
         opacity: 0.5;
@@ -71,9 +67,75 @@ html {
     }
 }
 
-.container {
+header {
     z-index: 2;
     width: 100vw;
-    text-align: center;
-    color: brown;
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 0;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
