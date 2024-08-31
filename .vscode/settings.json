@@ -1,0 +1,7 @@
+{
+    "editor.tabSize": 4,
+    "editor.foldingStrategy": "auto",
+    "editor.indentSize": "tabSize",
+    "markdown.extension.tableFormatter.normalizeIndentation": false
+}
+

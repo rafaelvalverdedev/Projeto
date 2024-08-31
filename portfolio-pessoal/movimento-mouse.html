@@ -9,29 +9,19 @@
 </head>
 
 <body>
-    <img src="astronaut2.png" class="fallback-image" alt="Fallback Image">
-
-
-    <img src="astronaut2.png" id="movableImage" alt="Fallback Image">
     
-    <video class="video-background" autoplay muted loop playsinline>
-        <source src="video/9340918-uhd_3840_2160_24fps.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-    </video>
-
-    <div class="content">
+    <div class="background"></div>   
+    <div class="container-estrelas" id="container-estrelas"></div>
+    
+    <img src="astronaut2.png" id="movableImage" class="img-astronauta">
+    
+    <div class="container">
         <h1>Bem-vindo à minha página</h1>
-        <p>Rafael Valverde</p>
+        <p>Rafael Valverde</p>asdasd
     </div>
-    <script>
-        const image = document.getElementById('movableImage');
-
-        document.addEventListener('mousemove', function (e) {
-            const x = e.clientX / window.innerWidth * 3;
-            const y = e.clientY / window.innerHeight * 3;
-            image.style.transform = `translate(${x}%, ${y}%)`;
-        });
-    </script>
+    
+    <script src="assets/js/estrelas.js" defer></script>
+    <script src="assets/js/astronauta.js" defer></script>
 </body>
 
 </html>

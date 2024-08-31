@@ -6,6 +6,9 @@ Aqui estão algumas ideias de projetos que aperfeiçoaram meus estudos em desenv
 
 Criação de um site de portfolio para mostrar projetos e habilidades. Este projeto permite praticar HTML, CSS e design responsivo.
 
+### Pacotes instalados 
+npm install three
+
 ## 2. Clone de Interface de Usuário
 
 Recriar a interface de um site popular (como Netflix, Airbnb ou Twitter) para praticar layout e estilização avançada.
