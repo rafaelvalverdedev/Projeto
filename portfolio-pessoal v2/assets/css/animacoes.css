@@ -1,0 +1,104 @@
+/* Animação para Estrela piscar */
+@keyframes anima-estrela {
+
+    0%,
+    100% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Animação para nome carregando no load da pagina */
+@keyframes mover {
+    0% {
+        filter: blur(6px) opacity(10%);
+        transform: translateX(0);
+    }
+
+    40% {
+        filter: blur(0.5px) opacity(100%);
+        transform: translateX(-100px);
+    }
+
+    50% {
+        filter: blur(0.5px) opacity(100%);
+        transform: translateX(-100px);
+    }
+
+    60% {
+        filter: blur(0.5px) opacity(100%);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        filter: blur(6px) opacity(0);
+        transform: translateX(0);
+    }
+}
+
+/* Animação para logotipo  <rafa/>  */
+
+
+@keyframes anima_barra_logo {
+    0% {
+        color: #324457;
+    }
+
+    50% {
+        color: #e0f006;
+        font-weight: 500;
+    }
+
+    100% {
+        color: #324457;
+    }
+}
+
+/* Animação para  nome de introdução Rafael Valverde */
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes filling {
+    from {
+        fill: #ffee00;
+        fill-opacity: 0;
+    }
+
+    to {
+        fill: #ffee00;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes some {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-20%, -50%);
+        display: none;
+    }
+}
+
+/* Animação para  o logo do Github */
+@keyframes anima_logogithub {
+    0% {
+        transform: translate(0%, -0%);
+    }
+
+    50% {
+        transform: translate(0%, -20%);
+    }
+
+    100% {
+        transform: translate(0%, -0%);
+    }
+}

@@ -9,20 +9,18 @@ html {
      background: linear-gradient(180deg, rgba(32, 44, 57, 1) 0%, rgba(0, 0, 0, 1) 100%);
      background-attachment: fixed;
      color: beige;
-     font-family: "Orbitron", sans-serif;
+     font-family: "Lato", sans-serif;
 }
 
 #content {
      display: none;
      width: 100vw;
      height: 100vh;
-     position: absolute;
      display: flex;
      flex-direction: column;
-     justify-content: center;
-     align-items: center;
 }
 
+.logogithub,
 header,
 main,
 footer {
@@ -31,12 +29,37 @@ footer {
      transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+.logogithub.show,
 header.show,
 main.show,
 footer.show {
      opacity: 1;
      transform: translateY(0);
 }
+
+header {
+     width: 100vw;
+     height: 50px;
+     position: fixed;
+     z-index: 1000;
+     /* Garante que fique acima do conteúdo */
+}
+
+main {
+     display: block;
+     justify-content: center;
+     align-items: center;
+     padding-top: 60px;
+     /* Espaço para o header fixo */
+}
+
+footer {
+     padding-top: auto;
+     position: relative;
+     background-color: lightcoral;
+}
+
+
 
 svg {
      opacity: 0;
@@ -66,32 +89,88 @@ svg.some {
      animation: some 0.5s linear forwards;
 }
 
-@keyframes dash {
-     to {
-          stroke-dashoffset: 0;
-     }
+code {
+     background-color: #f6f6f6;
+     color: black;
+     font-family: Orbitron, "sans-serif";
+     font-weight: 900;
+     padding: 5px;
 }
 
-@keyframes filling {
-     from {
-          fill: #ffee00;
-          fill-opacity: 0;
-     }
-
-     to {
-          fill: #ffee00;
-          fill-opacity: 1;
-     }
+.barra_logo {
+     color: #e0f006;
+     animation: anima_barra_logo 1s infinite;
 }
 
-@keyframes some {
-     from {
-          opacity: 1;
-     }
+.logogithub {
+     z-index: 999;
+     position: absolute;
+     bottom: 0px;
+     left: 10px;
+     cursor: pointer;
+     animation: anima_logogithub 2s ease-in infinite;
+}
 
-     to {
-          opacity: 0;
-          transform: translate(-20%, -50%);
-          display: none;
-     }
+.logogithub img {
+     min-width: 40px;
+     max-width: 40px;
+}
+
+
+
+.conteudo_main {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 20px;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     margin: 10px 10px;
+     align-items: center;
+}
+
+.nav-list {
+     display: none;
+     flex-direction: column;
+     position: absolute;
+     top: 50px;
+     right: 0;
+     background-color: #333;
+     text-decoration: none;
+     width: 200px;
+}
+
+.nav-list.active {
+     display: flex;
+}
+
+.nav-list li {
+     margin: 10px 0;
+}
+
+.menu-toggle {
+     display: none;
+     background: none;
+     border: none;
+     color: #fff;
+     font-size: 32px;
+     font-weight: 800;
+     cursor: pointer;
+}
+
+.menu-toggle {
+     display: block;
+}
+
+.img-astronauta {
+     z-index: 9999;
+     max-width: 60%;
+     height: auto;
+     transition: transform 0.5s linear;
+     filter: drop-shadow(0 0 8px rgba(81, 77, 90, 0.8));
 }

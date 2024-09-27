@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/loader.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/medias.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animacoes.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/estrelas.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/loader.css" />
     <title>Rafael Valverde - Dev</title>
 </head>
 
@@ -21,37 +22,76 @@
     </div>
 
     <div id="content">
-        <svg id="nomeRafael" width="80%" height="100%" viewBox="0 0 857 151" stroke="#e0f006" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+        <svg id="nomeRafael" width="80%" height="100%" viewBox="0 0 857 151" stroke="#e0f006" stroke-width="2"
+            xmlns="http://www.w3.org/2000/svg">
             <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Rafeal Valverde</text>
         </svg>
 
-        <header>
-            <h1>Bem-vindo ao Meu Site</h1>
-        </header>
-        <main>
-            <pre id="texto"></pre>
-            <img src="astronaut2.png" id="movableImage" class="img-astronauta" width="100px">
-            <p>Este é o conteúdo da página que aparece após o carregamento.</p>
+        <div class="logogithub" id="logogithub">
+            <a href="https://github.com/rafaelvalverdedev/" target="_blank">
+                <img src="assets/images/logogithub.png" />
+            </a>
+        </div>
 
-            <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <code>&lt;RAFA<span class="barra_logo">/</span>&gt; </code>
+                </div>
+                <button class="menu-toggle">
+                    ...
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="conteudo_main">
+                <img src="astronaut2.png" id="movableImage" class="img-astronauta">
+            </div>
+
+
+
+            <section id="home">
+                <h2>Bem-vindo ao Meu Site</h2>
+                <p>Este é um parágrafo introdutório sobre o que você encontrará aqui.</p>
+                <pre id="texto"></pre>
+                <img src="astronaut2.png" id="movableImage" width="150">
+            </section>
+    
+            <section id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+                <p>Informações sobre a empresa ou o projeto.</p>
+            </section>
+
+
+
+
+
         </main>
+
         <footer>
             <p>© 2024 Meu Site</p>
         </footer>
     </div>
 
-
     <script src="assets/js/estrelas.js" defer></script>
     <script src="assets/js/loadpage.js" defer></script>
     <script src="assets/js/astronauta.js" defer></script>
-    <!-- <script src="assets/js/menu.js" defer></script> -->
+    <script src="assets/js/menu.js" defer></script>
 </body>
 
 </html>
