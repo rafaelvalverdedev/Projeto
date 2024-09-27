@@ -92,5 +92,6 @@ svg.some {
      to {
           opacity: 0;
           transform: translate(-20%, -50%);
+          display: none;
      }
 }
