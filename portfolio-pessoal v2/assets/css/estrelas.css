@@ -1,0 +1,18 @@
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    width: 2px;
+    height: 2px;
+    animation: anima-estrela 1.5s infinite ease-in-out;
+}
+
+@keyframes anima-estrela {
+    0%,
+    100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+}

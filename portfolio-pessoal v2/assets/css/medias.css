@@ -1,0 +1,30 @@
+/* Para telas menores que 600px (smartphones) */
+@media screen and (max-width: 600px) {
+}
+
+
+/* Para telas entre 600px e 900px (tablets) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Estilos para tablets */
+}
+
+/* Para telas entre 900px e 1200px (notebooks e desktops pequenos) */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    /* Estilos para dispositivos de tamanho médio */
+}
+
+/* Para impressão */
+@media print {
+    /* Estilos para impressão */
+}
+
+
+/* Para telas em modo retrato */
+@media screen and (orientation: portrait) {
+    /* Estilos para modo retrato */
+}
+
+/* Para telas em modo paisagem */
+@media screen and (orientation: landscape) {
+    /* Estilos para modo paisagem */
+}

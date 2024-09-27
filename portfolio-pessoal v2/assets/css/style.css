@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+body,
+html {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     background: linear-gradient(180deg, rgba(32, 44, 57, 1) 0%, rgba(0, 0, 0, 1) 100%);
+     background-attachment: fixed;
+     color: beige;
+     font-family: "Orbitron", sans-serif;
+}
+
+#content {
+     display: none;
+     width: 100vw;
+     height: 100vh;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+header,
+main,
+footer {
+     opacity: 0;
+     transform: translateY(-20px);
+     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+header.show,
+main.show,
+footer.show {
+     opacity: 1;
+     transform: translateY(0);
+}
+
+svg {
+     opacity: 0;
+}
+
+svg.show {
+     opacity: 1;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 92px;
+     stroke-dasharray: 500;
+     stroke-dashoffset: 500;
+     animation: dash 2s linear forwards, filling 3s ease-in forwards;
+}
+
+svg.some {
+     opacity: 1;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 92px;
+     stroke-dasharray: 500;
+     stroke-dashoffset: 500;
+     animation: some 0.5s linear forwards;
+}
+
+@keyframes dash {
+     to {
+          stroke-dashoffset: 0;
+     }
+}
+
+@keyframes filling {
+     from {
+          fill: #ffee00;
+          fill-opacity: 0;
+     }
+
+     to {
+          fill: #ffee00;
+          fill-opacity: 1;
+     }
+}
+
+@keyframes some {
+     from {
+          opacity: 1;
+     }
+
+     to {
+          opacity: 0;
+          transform: translate(-20%, -50%);
+     }
+}

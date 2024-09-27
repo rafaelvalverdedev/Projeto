@@ -1,0 +1,68 @@
+.carregando {
+    color: rgb(184, 173, 31);
+    animation: mover 4s ease-in-out infinite alternate;
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+    font-size: 24px;
+    font-family: "Orbitron", sans-serif;
+    
+}
+
+.comentario {
+    color: #6a9955;
+    /* Verde para comentários */
+}
+
+.palavra-chave {
+    color: #569cd6;
+    /* Azul para palavras-chave */
+}
+
+.nome-funcao {
+    color: #dcdcaa;
+    /* Amarelo claro para nomes de funções */
+    font-weight: 700;
+}
+
+.chave {
+    color: #e0f006;
+    /* Verde-água para chaves como console */
+}
+
+.metodo {
+    color: #d7ba7d;
+    /* Marrom para métodos */
+}
+
+.string {
+    color: #ce9178;
+    /* Laranja para strings */
+}
+
+@keyframes mover {
+    0% {
+        filter: blur(6px) opacity(10%);
+        transform: translateX(0);
+    }
+
+    40% {
+        filter: blur(0.5px) opacity(100%);
+        transform: translateX(-100px);
+    }
+
+    50% {
+        filter: blur(0.5px) opacity(100%);
+        transform: translateX(-100px);
+    }
+
+    60% {
+        filter: blur(0.5px) opacity(100%);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        filter: blur(6px) opacity(0);
+        transform: translateX(0);
+    }
+}
